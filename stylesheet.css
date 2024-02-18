@@ -129,3 +129,26 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.expanded-text {
+  width: 100%;
+}
+/* Longer name hidden by default  */
+span.longer-name{
+  display:none;
+}
+/* Short name display by default  */
+span.short-name{
+  display:block;
+  text-align:justify;
+}
+/* On hover, hide the short name */
+.expanded-text:hover span.short-name{
+  display:none;
+  text-align:justify;
+}
+/* On hover, display the longer name.  */
+.expanded-text:hover span.longer-name{
+  display:block;
+  text-align:justify;
+}
